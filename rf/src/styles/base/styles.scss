@@ -1,0 +1,229 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// Google Fonts
+
+
+
+button{
+    width: 170px !important;
+    height: 40px !important;
+    max-width: 170px !important;  
+}
+
+/* ###IDS### */
+
+.inner-container{
+    margin: 0 auto;
+    width: 100%;
+    height: 650px;
+    // overflow: hidden;
+}
+
+.inner-container-scroll{
+    overflow-y: scroll;
+    max-height: 600px;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+.data-container{
+    max-height: 600px;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+.progress1{
+    width: 100%;
+    padding-right: 40px;
+}
+
+.progressbar1 li:before {
+    content: '';
+    // width:20px;
+    // height: 20px;
+    // line-height: 20px;
+    // border: 1px solid #ddd;
+    // display: block;
+    // text-align: center;
+    // margin: 0 auto 0px auto;
+    // border-radius: 50%;
+    // background-color: white;
+}
+.progressbar1 li {
+    list-style-type: none;
+    float: left;
+    width: 14.28571428571429%;
+    position: relative;
+    text-align: center;
+}
+.progressbar1 li:after{
+    // content: '';
+    // position: absolute;
+    // width: 100%;
+    // height: 5px;
+    // background-color: #ddd;
+    // top: 10px;
+    // left: -50%;
+    // z-index: -1;
+}
+.progressbar1 li:first-child:after{
+    content: none;
+}
+.progressbar1 li.active{
+    color: #5EC7CB;
+}
+.progressbar1 li.active:before{
+    border-color: #5EC7CB;
+}
+.progressbar1 li.active + li:after{
+    background-image: repeating-linear-gradient(-45deg,transparent,transparent 20px,#5EC7CB 20px, #5EC7CB 40px);
+}
+.progressbar1 li.active:before{
+    background: #5EC7CB;
+}
+
+.start{
+    // animation-name: slideUp;
+    // animation-delay: 1s;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-out;
+    // animation-fill-mode: forwards;
+    position: absolute; 
+    // margin-left: -280px;
+    left: 30%; 
+    // top: 40%;
+}
+
+@keyframes slideUp {
+    100%{
+        top:0px
+    }
+}
+
+/* COLORS */
+.bg5ec7cb{
+    background: #5ec7cb;
+}
+
+.tc475868{
+    color: #475868;
+}
+
+.bg475868{
+    background: #475868;
+}
+
+.select{
+    background: #475868 !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    color: white !important;
+}
+
+input[type="text"]{
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input[type="number"]{
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input[type='date']{
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.zero-dawn{
+    margin: 0 auto !important;
+}
+
+.bigger{
+    font-size: 2rem;
+}
+
+.home-window-height{
+    min-height: 600px !important;
+    max-height: 600px !important;
+}
+
+select:hover{
+    background: white !important;
+    color: black !important;
+}
+
+#dataPageContainer{
+    overflow-y: scroll;
+}
+
+#dataPageContainer h1{
+    text-align: center;
+    padding: 10px;
+    background: #475868;
+    color: white;
+    border-radius: 3px !important;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#dataPageContainer h5{
+    color: black;
+    text-align: left;
+    padding: 20px;
+    border-radius: 3px !important;
+    box-shadow: 0px 9px 13px -13px #000000bd;
+    width: 550px;
+    margin: 0 auto;
+}
+
+#createLoginModal{
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+
+#createLoginModalContainer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.657);
+}
+
+
+#apiModal{
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+
+#apiModalContainer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.657);
+}
+
+#spinner{
+    display: flex;
+}
+
+#scroll{
+    overflow-y: scroll; 
+}
